@@ -1,0 +1,51 @@
+/* google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* fonts-style */
+body{
+font-family: 'Poppins', sans-serif;
+}
+.first-section{
+    display: block;
+}
+
+.half-width{
+        width: 50%;
+        padding-left: 3%;
+        align-content: center;
+}
+
+.heading{
+    margin:100px;
+
+}
+
+.half-width img{
+    width: 80%;
+}
+
+.heading .watch:hover .fas{
+    transform: scale(1.5) rotateY(360deg) ;
+    transition: transform 2s ease;
+}
+/* first section background */
+ .first-part{
+    background-color: #2D25A0 ;
+    color: white;
+    display: flex;
+    
+} 
+.watch{
+    background-color: #E02C6D;
+    width: 120px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+
+/* banner part */
+.top-banner{
+     
+}
+
