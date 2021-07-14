@@ -1,10 +1,20 @@
+/* media query styles */
+@media only screen and (max-width: 600px) {
+    body {
+        width: 360px;
+        height: 7735px;
+    }
+  }
+
+
+
 /* google fonts */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
 /* fonts-style */
 body{
-font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 .first-section{
     display: block;
@@ -14,22 +24,24 @@ font-family: 'Poppins', sans-serif;
         width: 50%;
         padding-left: 3%;
         align-content: center;
+        margin:100px;
 }
-
-.heading{
-    margin:100px;
-
-}
-
 .half-width img{
-    width: 80%;
+    width: 100%;
 }
 
 .heading .watch:hover .fas{
-    transform: scale(1.5) rotateY(360deg) ;
-    transition: transform 2s ease;
+    transform: scale(1.5) rotateY(720deg) ;
+    transition: transform 1s ease ;
+}
+.heading h1{
+    font-size: 64px;
+}
+.watch span{
+    font-size: 16px;
 }
 /* first section background */
+
  .first-part{
     background-color: #2D25A0 ;
     color: white;
@@ -44,8 +56,81 @@ font-family: 'Poppins', sans-serif;
 }
 
 
-/* banner part */
-.top-banner{
-     
+/* players part */
+
+.container{
+    background-color: lightgoldenrodyellow;
+    margin-top: 30px;
+    margin-left: 180px;
+    margin-right: 200px;  
+    border-radius: 10px;
+}
+.players{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr); 
+    grid-row-gap: 10px;
+    
+}
+.player img{
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    border-radius: 20px;
+}
+.player{
+    background-color: white;
+    border-radius: 20px;
+    margin:7px;
+    padding: 15px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.players .player h2{
+    color: #18191F;
+    font-size: 28px ;
+}
+.players .player p{
+    color: #6C6C6C;
+    font-size: 16px;
+}
+
+/* higlights video */
+.highlights{
+    background-color: black;
+    margin: 10px;
+}
+.watch-high{
+    color:white;
+    padding: 15px;
+    text-align: center;
+}
+/* Supporter info */
+.supporter{
+    background-color:brown;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+}
+
+/* footer part */
+.foot{
+    background-color:lightpink;
+    padding: 10px;
+    margin: 10px;
+}
+.last-part img{
+    width: 20%;
+    margin-left: 40%;
+}
+.social-icon{
+    display: flex;
+    justify-content:flex-start;
+    margin-left: 47%;
+    padding: 10px;
+
+}
+.copyright{
+    text-align: center;
 }
 
