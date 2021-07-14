@@ -1,13 +1,3 @@
-/* media query styles */
-@media only screen and (max-width: 600px) {
-    body {
-        width: 360px;
-        height: 7735px;
-    }
-  }
-
-
-
 /* google fonts */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
@@ -16,12 +6,13 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
-.first-section{
-    display: block;
+
+.first-part{
+    display: flex;
 }
 
 .half-width{
-        width: 50%;
+        width: 100%;
         padding-left: 3%;
         align-content: center;
         margin:100px;
@@ -45,8 +36,6 @@ body{
  .first-part{
     background-color: #2D25A0 ;
     color: white;
-    display: flex;
-    
 } 
 .watch{
     background-color: #E02C6D;
@@ -111,6 +100,7 @@ body{
     color: white;
     padding: 20px;
     margin: 10px;
+    
 }
 
 /* footer part */
@@ -124,13 +114,29 @@ body{
     margin-left: 40%;
 }
 .social-icon{
-    display: flex;
-    justify-content:flex-start;
-    margin-left: 47%;
-    padding: 10px;
+    display:flex;
+    justify-content:space-around;
+    width: 10%;
+    margin-left: 45%;
 
 }
 .copyright{
     text-align: center;
 }
+
+
+/* media query styles */
+@media only screen and (max-width: 600px) {
+    
+    .players{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .first-part{
+        width: 100%;
+        display:flex;
+        
+    }
+
+  }
+
 
